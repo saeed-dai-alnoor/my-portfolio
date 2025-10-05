@@ -43,7 +43,7 @@ class AboutView extends GetView<AboutController> {
                   // Name
                   AutoSizeText(
                     Get.locale?.languageCode == 'ar'
-                        ? 'سعيد ضي النور'
+                        ? 'devسعيد ضي النور'
                         : controller.name,
                     style: TextStyle(
                       fontSize: constraints.maxWidth < 600 ? 20 : 26,
