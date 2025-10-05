@@ -63,11 +63,20 @@ class ProjectsView extends GetView<ProjectsController> {
                         borderRadius: const BorderRadius.vertical(
                           top: Radius.circular(20),
                         ),
-                        child: Image.network(
+                        child: Image.asset(
                           project.imageUrl,
                           height: 140,
                           width: double.infinity,
                           fit: BoxFit.contain,
+                          frameBuilder:
+                              (context, child, frame, wasSynchronouslyLoaded) {
+                                if (wasSynchronouslyLoaded) return child;
+                                return AnimatedOpacity(
+                                  opacity: frame == null ? 0 : 1,
+                                  duration: const Duration(seconds: 1),
+                                  child: child,
+                                );
+                              },
                           errorBuilder: (context, error, stackTrace) =>
                               Container(
                                 height: 140,
