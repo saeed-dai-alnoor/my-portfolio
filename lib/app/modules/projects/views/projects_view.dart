@@ -9,8 +9,18 @@ class ProjectsView extends GetView<ProjectsController> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
       padding: const EdgeInsets.all(16.0),
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('assets/images/background.png'),
+          fit: BoxFit.cover,
+          colorFilter: ColorFilter.mode(
+            Colors.black.withValues(alpha: 0.2),
+            BlendMode.darken,
+          ),
+        ),
+      ),
       child: Obx(() {
         if (controller.projects.isEmpty) {
           return const Center(child: CircularProgressIndicator());

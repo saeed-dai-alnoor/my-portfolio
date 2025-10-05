@@ -7,7 +7,7 @@ class AboutController extends GetxController {
   final String titleEn = 'Flutter Developer';
   final String aboutMeEn = """
 
-My name is Saeed Dai Alnoor from Sudan. I'm a Flutter Mobile Apps Developer with more than 2 years of experience in building Flutter apps using technologies such as GetX State Management. I love to make reusable components and always follow best practices. I'm a fast learner, always developing my skills and exploring new technologies. I’m looking for opportunities that take me to a higher level.
+My name is Saeed Dai Alnoor from Sudan. I'm a Flutter Mobile Apps Developer with more than 3 years of experience in building Flutter apps using technologies such as GetX State Management. I love to make reusable components and always follow best practices. I'm a fast learner, always developing my skills and exploring new technologies. I’m looking for opportunities that take me to a higher level.
 
 I’m interested in mobile application development and collaborating in Dart language. I believe that hard work governed by a proper system is the way to success, and this is my way in life. I know how to make almost all apps responsive and work correctly.
 
